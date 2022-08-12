@@ -1,5 +1,6 @@
 const colorFormeEl = document.querySelector(".color-form");
 const submitEl = document.getElementById("submit-btn");
+const redoBtn = document.getElementById("redo-form-btn");
 const colorInformation = {
   black: `Black can mean so many different things: boldness, uniqueness, mystery, intrigue, and power. <br>But it can also mean unhappiness, darkness, sadness, pain, or grief. Black is associated with death and mourning, but can also be associated with strength, luxury, and intensity.
     <br>Personality traits of black:
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.querySelector("body").style.backgroundColor = savedFave;
+    redoBtn.style.display = "block";
   }
 });
 
@@ -82,6 +84,11 @@ submitEl.addEventListener("click", function (e) {
   submitEl.style.display = "none";
 
   return true;
+});
+
+redoBtn.addEventListener("click", () => {
+  localStorage.removeItem("favcolor");
+  location.reload();
 });
 
 function mode(arr) {

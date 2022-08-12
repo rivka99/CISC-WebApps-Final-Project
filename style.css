@@ -37,6 +37,12 @@ nav{
   display: none;
   background-color: #fc7c00;
 }
+#redo-form-btn{
+  display: none;
+  width: 400px;
+  padding: 2px;
+  border-radius: 4px;
+}
 #color-fun-div{
    margin-left: 5%
 }
