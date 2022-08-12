@@ -1,5 +1,5 @@
 a {
-    text-decoration: none; /* no underline */
+    text-decoration: none; 
   }
 nav{
     display: flex;
@@ -12,9 +12,10 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 25px;
+    min-width: fit-content;
 }
 #nav-title{
-    margin-right: 800px;
+    margin-right: 60vw;
 }
 #nav-img{
     width:30px;
@@ -30,7 +31,11 @@ nav{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px
+    gap: 30px;
+}
+#submit-php{
+  display: none;
+  background-color: #fc7c00;
 }
 #color-fun-div{
    margin-left: 5%
@@ -82,6 +87,17 @@ nav{
   }
   #color-circle-6:hover{
     background-color: #1211dd;
+  }
+  table{
+    table-layout: fixed;
+  }
+  #color-table-div{
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+  td{
+    width: 205px;
+    height: 160px;
   }
   footer{
     margin-top: 10%;

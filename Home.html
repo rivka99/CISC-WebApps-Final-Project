@@ -35,7 +35,7 @@
             <h1>Welcome to my color themed website!</h1>
             <div class="color-form" onload="">
                 <h2>Which color best matches your personality? Take the quiz below to find out!</h2>
-                <form action="process.php" method="POST" target="_blank">
+                <form action="process.php" method="POST" target="_self">
                     <div class="color-form-qs">
                         <div>
                             <label for="name">Name:</label><br>
@@ -366,8 +366,9 @@
                         </div>
 
                     </div>
-                    <input type="submit" value="Submit Data"><br>
-                    <button id="submit-btn">Get Results</button>
+
+                    <button id="submit-btn">Save Data</button>
+                    <input type="submit" value="Get Results" id="submit-php"><br>
                 </form>
             </div>
         </div>
