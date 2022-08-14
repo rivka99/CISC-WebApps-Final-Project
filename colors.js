@@ -11,5 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   colorCells.forEach((cell) => {
     cell.style.backgroundColor =
       "#" + Math.floor(Math.random() * 16777215).toString(16);
+    cell.addEventListener("click", function () {
+      cell.style.backgroundColor = document.getElementById("colorpick").value;
+    });
   });
 });

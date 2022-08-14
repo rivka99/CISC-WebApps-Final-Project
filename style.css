@@ -26,6 +26,10 @@ nav{
     margin-left: 10px;
     margin-right: 2px;
 }
+.nav--link-active{
+  font-weight: bolder;
+  color: darkviolet;
+}
 #homepage-container{
   width: 100vw;
   margin-left: 4%;
@@ -142,9 +146,21 @@ nav{
   td{
     width: 205px;
     height: 160px;
+    opacity: .8;
   }
   td:hover{
-    opacity: .7;
+    opacity: 1;
+  }
+  #colorpick{
+    margin-left: 35%;
+    width: 200px;
+    height: 50px;
+  }
+  #about-us{
+    margin-left:3%;
+  }
+  #about-us a{
+    text-decoration: underline;
   }
   footer{
     margin-top: 10%;
