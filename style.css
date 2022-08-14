@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 a {
     text-decoration: none; 
   }
@@ -23,9 +26,16 @@ nav{
     margin-left: 10px;
     margin-right: 2px;
 }
+#homepage-container{
+  width: 100vw;
+  margin-left: 4%;
+}
+.emotes{
+  font-size: x-large;
+}
 .color-form{
     font-size: large;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 .color-form-qs{
     width: 90%;
@@ -33,9 +43,25 @@ nav{
     flex-wrap: wrap;
     gap: 30px;
 }
+.color-form-qs input:focus{
+  background-color: #e4fdfd;
+}
+#submit-btn{
+  background-color: lightgreen;
+  margin-left: 27vw;
+  margin-top: 2%;
+  width: 200px;
+  text-align: center;
+  padding: 8px;
+}
 #submit-php{
   display: none;
   background-color: #fc7c00;
+  margin-left: 27vw;
+  margin-top: 2%;
+  width: 200px;
+  text-align: center;
+  padding: 8px;
 }
 #redo-form-btn{
   display: none;
@@ -45,6 +71,19 @@ nav{
 }
 #color-fun-div{
    margin-left: 5%
+}
+#colorwheel{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+
+}
+#colorwheel img{
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  margin-top: 5px;
+  margin-right: 8px;
 }
 #color-circle-div{
     display: flex;
@@ -98,12 +137,14 @@ nav{
     table-layout: fixed;
   }
   #color-table-div{
-    margin-top: 15%;
     margin-left: 5%;
   }
   td{
     width: 205px;
     height: 160px;
+  }
+  td:hover{
+    opacity: .7;
   }
   footer{
     margin-top: 10%;

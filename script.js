@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("homepage").innerHTML += `
       <h1>Based on your answers, the color that suits you best is the color ${savedFave}</h1>
       <h3>Here is some information from <a href="https://bigthink.com/neuropsych/color-personality-psychology/" target="_blank" style="color:gray;text-decoration: underline;">BigThink.com</a> as to what this might mean about your personality:</h3>
-      <p>${colorInformation[savedFave]}</p>`;
+      <p style="font-size:larger;">${colorInformation[savedFave]}</p>`;
     }
 
     document.querySelector("body").style.backgroundColor = savedFave;
